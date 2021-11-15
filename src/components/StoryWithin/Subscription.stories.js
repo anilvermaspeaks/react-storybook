@@ -1,7 +1,7 @@
 import React from 'react'
 import { Primary } from '../Button/Button.stories'
 export default {
-    title: 'Form/Subscription',
+    title: 'StoryWithin',
 }
 
-export const PrimarySubscription = () => <Primary />
+export const StoryWithin = () => <Primary />
