@@ -5,10 +5,10 @@ import Center from '../Center/Center'
 export default {
     title: 'Button',
     component: Button,
-    decorators: [story => <Center>{story()}</Center>]
-    // args: {
-    //     children: 'Button'
-    // }
+    decorators: [story => <Center>{story()}</Center>],
+    args: {
+        children: 'Button'
+    }
 }
 
 
@@ -24,5 +24,15 @@ export const PrimaryA = Template.bind({});
 
 PrimaryA.args = {
     variant: 'primary',
-    children: 'Primary Args'
+    children: 'Primary Args',
+
+}
+
+PrimaryA.argTypes = {
+    onClick: {
+        action: 'clicked',
+    },
+    onMouseEnter: {
+        action: 'hover',
+    }
 }
